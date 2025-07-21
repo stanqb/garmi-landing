@@ -125,27 +125,22 @@
         .phone-mockup {
             margin-top: 3rem;
             max-width: 300px;
-            height: 600px;
-            background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-            border-radius: 30px;
-            padding: 20px;
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .phone-screen {
             width: 100%;
-            height: 100%;
-            background: white;
             border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
             overflow: hidden;
+        }
+
+        .phone-screen img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 20px;
         }
 
         .app-interface {
@@ -319,17 +314,18 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background: #050894;
-            color: white;
+            background: #e0e0e0;
+            color: #333;
             border-radius: 50%;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .social-links a:hover {
+            background: #d0d0d0;
             transform: scale(1.1);
         }
 
@@ -400,10 +396,7 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo">
-                <img src="assets/images/garmi-logo.png" alt="GARMI" style="height: 30px; margin-right: 10px; vertical-align: middle;">
-                GARMI
-            </a>
+            <a href="#" class="logo">Accueil</a>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
@@ -415,13 +408,13 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content fade-in">
-            <h1>GARMI</h1>
+            <img src="assets/images/garmi-logo.png" alt="GARMI Logo" style="height: 120px; margin-bottom: 1rem;">
             <p class="hero-subtitle">Your digital wardrobe powered by Apple's AI</p>
             <a href="https://www.youtube.com/shorts/RfTpuNCmWew" target="_blank" class="cta-button">Découvrir GARMI en Live</a>
             
             <div class="phone-mockup">
                 <div class="phone-screen">
-                    <img src="assets/images/iphone-mockup.png" alt="GARMI App Screenshot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    <img src="assets/images/iphone-mockup.png" alt="GARMI App Screenshot">
                 </div>
             </div>
         </div>
@@ -433,17 +426,17 @@
             <h2 class="section-title">Revolutionary Features</h2>
             <div class="features-grid">
                 <div class="feature-card fade-in">
-                    <img src="assets/images/feature-ai.png" alt="Vision AI" class="feature-icon" style="width: 80px; height: 80px; object-fit: contain;">
+                    <img src="assets/images/feature-ai.png" alt="Vision AI" class="feature-icon" style="width: 120px; height: 120px; object-fit: contain; margin: 0 auto 1rem;">
                     <h3>Apple Vision AI</h3>
                     <p>Advanced AI background removal using Apple's Vision Framework. Your clothes are automatically extracted from photos with perfect precision, all processed locally on your iPhone.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <img src="assets/images/feature-privacy.png" alt="Local Storage" class="feature-icon" style="width: 80px; height: 80px; object-fit: contain;">
+                    <img src="assets/images/feature-privacy.png" alt="Local Storage" class="feature-icon" style="width: 120px; height: 120px; object-fit: contain; margin: 0 auto 1rem;">
                     <h3>100% Local Storage</h3>
                     <p>Complete privacy by design. Your wardrobe data never leaves your device. No cloud dependency, no tracking, no data sharing. Your style, your privacy.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <img src="assets/images/feature-canvas.png" alt="Smart Canvas" class="feature-icon" style="width: 80px; height: 80px; object-fit: contain;">
+                    <img src="assets/images/feature-canvas.png" alt="Smart Canvas" class="feature-icon" style="width: 120px; height: 120px; object-fit: contain; margin: 0 auto 1rem;">
                     <h3>Smart Canvas</h3>
                     <p>Intelligent outfit creation with drag & drop interface. Pinch-to-zoom, automatic positioning, and smart flat-lay arrangement. Create stunning outfits in under 30 seconds.</p>
                 </div>
